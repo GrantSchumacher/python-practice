@@ -69,3 +69,60 @@ x, u, z = fruits
 print(x)
 print(y)
 print(z)
+
+
+#GLOBAL VARIABLES ------------------
+
+x = "awesome"
+
+def myfunc():
+    print("Python is " + x)
+
+myfunc()
+
+#you can create global variables inside of a function
+
+def myfunc():
+    global x #use the global keyword
+    x = "fantastic"
+
+myfunc()
+print("Python is " + x)
+
+
+#BUILT-IN DATA TYPES ----------------------
+#text type: str
+#numeric types: int, float, complex
+#sequence types: list, tuple, range
+#mapping type: dict
+#set type: set, frozenset
+#boolean type: bool
+#binary types: bytes, bytearray, memoryview
+#nonetype: NoneType
+
+x = "Hello World"                   #STR
+x = 20                              #int
+x = 20.5                            #float
+x = 1j                              #complex
+x = ["Apple", "Banana"]             #list
+x = ("apple", "banana")             #tuple
+x = range(6)                        #range
+x = {"Name" : "John", "age" : 36}   #dict
+x = {"apple", "banana", "cherry"}   #set
+x = True                            #bool
+x = None                            #nonetype
+
+
+#STRINGS ---------------------
+a = "hello"
+print(a)
+
+a = """Lorem ipsum dolor sit amet,
+consectetur adipiscing elit,
+sed do eiusmod tempor incididunt
+ut labore et dolore magna aliqua."""
+print(a)
+
+#strings are arrays of characters
+a = "hello"
+print(a[1])
